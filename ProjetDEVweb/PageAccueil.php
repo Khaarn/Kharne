@@ -23,6 +23,6 @@ $haut=Bijouterie;
 ?>
 <?php include_once 'header.php';?>
     <body>
-        
+        <div><img src="logo-chimere.svg" alt="logo" height="650"></div>
     </body>
 </html>

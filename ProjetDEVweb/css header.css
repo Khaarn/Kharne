@@ -1,7 +1,12 @@
 h1{
     text-align: center;
-    color: #EE82EE;
+    color: white;
+    font-family: brush Script MT;
+    
 }
 body{
-    background-color: black;
+    background-color: lightgray;
+}
+div{
+    text-align: center;
 }
