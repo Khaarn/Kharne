@@ -3,9 +3,10 @@ $title=Accueil;
 $haut=Bijouterie;
 include 'header.php';
 ?>
-    <link href="../ProjetDEVweb/css header.css" rel="stylesheet" type="text/css"/>
+    <link href="Accueil.css" rel="stylesheet" type="text/css"/>
     </head>      
     <body>
-        <div><img src="logo-chimere.svg" alt="logo" height="650"></div>
+        <div class="log"><p>log in</p></div>
+        <div class="logo"><img src="logo-chimere.svg" alt="logo" height="650"></div>
     </body>
 </html>
