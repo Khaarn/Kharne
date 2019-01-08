@@ -10,3 +10,4 @@ and open the template in the editor.
         <title><?php echo $title ?></title>
     </head>
     <h1> <?php echo $haut ;?> </h1>
+    <link href="Header.css" rel="stylesheet" type="text/css"/>
