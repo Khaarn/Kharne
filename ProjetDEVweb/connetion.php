@@ -3,7 +3,7 @@ $title='log in';
 $haut=connexion;
 include 'header.php';
 ?>
-<link href="connextion.css" rel="stylesheet" type="text/css"/>
+<link href="connetion.css" rel="stylesheet" type="text/css"/>
     </header>
     <body>
         <table>
@@ -24,7 +24,7 @@ include 'header.php';
 
             </td></tr>
         <tr><td>
-                <div ><button class="bouton">connextion</button></div>
+                <div ><button class="bouton">connetion</button></div>
             </td></tr>
         </table>
         <div class="logo"><img src="logo-chimere.svg" alt="logo" height="650"></a></div>
