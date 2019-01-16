@@ -7,20 +7,27 @@ include 'header.php';
     </header>
     <body>
         <table>
-            <tr><td>
-            
+
+                <tr><td>
+
                           <input type="text" name="email" id="email" class="validate"
                    maxlength="50" required>
             <label for="email">e-mail</label>
+
             </td></tr>
+
         <tr><td>
+
                           <input type="text" name="mot de passe" id="mdp" class="validate"
                    maxlength="50" required>
             <label for="mot de passe">mot de passe</label>
+
             </td></tr>
         <tr><td>
                 <div ><button class="bouton">connextion</button></div>
             </td></tr>
         </table>
+        <div class="logo"><img src="logo-chimere.svg" alt="logo" height="650"></a></div>
+        
     </body>
 </html>
