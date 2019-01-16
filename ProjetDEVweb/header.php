@@ -9,5 +9,6 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title><?php echo $title ?></title>
     </head>
+    <header>
     <h1> <?php echo $haut ;?> </h1>
     <link href="Header.css" rel="stylesheet" type="text/css"/>
