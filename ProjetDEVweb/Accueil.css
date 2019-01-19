@@ -1,6 +1,20 @@
 
-div.log{
+div.log2{
     position: absolute;
-    top:5%;
+    top:27px;
     right: 3%;
+}
+.log {
+	padding:6px 0 6px 0;
+	font:Bold 13px Arial;
+	background:gray;
+	color:#fff;
+	width:90px;
+	border-radius:2px;
+	border:none;
+}
+div.log3{
+    position: absolute;
+    top:27px;
+    right: 20%;
 }

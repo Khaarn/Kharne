@@ -1,32 +1,27 @@
 <?php 
 $title='log in';
-$haut=connexion;
+$haut=connection;
 include 'header.php';
 ?>
 <link href="connetion.css" rel="stylesheet" type="text/css"/>
     </header>
     <body>
-        <table>
-
-                <tr><td>
-
+        <div class="coo">
                           <input type="text" name="email" id="email" class="validate"
-                   maxlength="50" required>
+                                 maxlength="50" required></div><div class="coo">
             <label for="email">e-mail</label>
+            <br> <br></div>
 
-            </td></tr>
 
-        <tr><td>
-
+        <div class="coo">
                           <input type="text" name="mot de passe" id="mdp" class="validate"
-                   maxlength="50" required>
+                                 maxlength="50" required></div><div class="coo">
             <label for="mot de passe">mot de passe</label>
+            <br> <br></div>
 
-            </td></tr>
-        <tr><td>
-                <div ><button class="bouton">connetion</button></div>
-            </td></tr>
-        </table>
+
+                <div class="coo"><button class="bouton">connection</button></div>
+           
         <div class="logo"><img src="logo-chimere.svg" alt="logo" height="650"></a></div>
         
     </body>
