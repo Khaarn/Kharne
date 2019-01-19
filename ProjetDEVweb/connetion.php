@@ -7,14 +7,14 @@ include 'header.php';
     </header>
     <body>
         <div class="coo">
-                          <input type="text" name="email" id="email" class="validate"
+            <input type="email" name="email" id="email" class="validate"
                                  maxlength="50" required></div><div class="coo">
             <label for="email">e-mail</label>
             <br> <br></div>
 
 
         <div class="coo">
-                          <input type="text" name="mot de passe" id="mdp" class="validate"
+            <input type="password" name="mot de passe" id="mdp" class="validate"
                                  maxlength="50" required></div><div class="coo">
             <label for="mot de passe">mot de passe</label>
             <br> <br></div>

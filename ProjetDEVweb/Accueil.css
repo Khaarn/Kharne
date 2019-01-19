@@ -13,6 +13,9 @@ div.log2{
 	border-radius:2px;
 	border:none;
 }
+.log:hover{
+    background-color: lightgray;
+}
 div.log3{
     position: absolute;
     top:27px;

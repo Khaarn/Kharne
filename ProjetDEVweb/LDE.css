@@ -1,0 +1,33 @@
+th
+{
+  height: 15%;
+  text-align: left;
+  background-color: #D61522;
+  color: black;
+}
+
+td
+{
+  height: 50px;
+  vertical-align: bottom;
+  border: 2px solid black;
+}
+
+table
+{
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+p{
+    text-align: center;
+    background-color: gray;
+}
+
+button{
+    background-color: darkgray;
+}
+
+div{
+    text-align: center;
+}
