@@ -1,6 +1,6 @@
 
         <?php
-        require_once '../Config.php';
+        require_once 'Config.php';
         
         $eMail = filter_input(INPUT_POST,"email");
         $MDP = filter_input(INPUT_POST, "mot de passe");
