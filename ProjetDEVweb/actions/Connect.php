@@ -24,6 +24,6 @@
             
             header("../ListeTravaille.php");
         }else{
-            $error = "Votre e-maile ou votre mot de passe est incorrecte";
+            $error = "Votre e-mail ou votre mot de passe est incorrecte";
         }
         ?>
