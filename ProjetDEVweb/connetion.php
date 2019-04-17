@@ -6,6 +6,7 @@ include 'header.php';
 <link href="connetion.css" rel="stylesheet" type="text/css"/>
     </header>
     <body>
+        <form>
         <div class="coo">
             <input type="email" name="email" id="email" class="validate"
                                  maxlength="50" required></div><div class="coo">
@@ -19,8 +20,8 @@ include 'header.php';
             <label for="mot de passe">mot de passe</label>
             <br> <br></div>
 
-
-                <div class="coo"><button class="bouton">connection</button></div>
+                <div class="coo"><input type="submit" value="Connection" class="btn-large right"></div>
+        </form>
            
         <div class="logo"><img src="logo-chimere.svg" alt="logo" height="650"></a></div>
         
