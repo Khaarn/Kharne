@@ -1,15 +1,14 @@
 
         <?php
         require_once '../Config.php';
-        session_start();
-        
-        $eMail = mysqli_real_escape_string(INPUT_POST,"email");
-        $MDP = mysqli_real_escape_string(INPUT_POST, "mot de passe");
-        
-        
         
         $db = mysqli_connect( Config::SERVEURNAME . ";dbname=" . Config::dbname
         , Config::user, Config::password);
+        
+        session_start();
+        
+        $eMail = mysqli_real_escape_string($db,$_POST,"email");
+        $MDP = mysqli_real_escape_string($db,$_POST, "mot de passe");
         
         $sql = "SELECT id FROM utilisateurs WHERE Email = '$eMail' and Mot de passe ='$MDP'";
         $result = mysqli_query($db,$sql);
