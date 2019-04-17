@@ -6,7 +6,7 @@ include 'header.php';
 <link href="connetion.css" rel="stylesheet" type="text/css"/>
     </header>
     <body>
-        <form>
+        <form method="post" action="actions/Connect.php">
         <div class="coo">
             <input type="email" name="email" id="email" class="validate"
                                  maxlength="50" required></div><div class="coo">
