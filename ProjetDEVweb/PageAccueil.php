@@ -8,7 +8,7 @@ include 'header.php';
     </header>      
     <body>
 
-        <a href=""><div class="log2"><button class="log">Connection</button></div></a>
+        <a href="connetion.php"><div class="log2"><button class="log">Connection</button></div></a>
         <a href=""><div class="log3" ><button class="log">Inscription</button></div></a>
 
         <div class="logo"><img src="logo-chimere.svg" alt="logo" height="650"></div>
