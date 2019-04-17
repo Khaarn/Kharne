@@ -11,9 +11,9 @@
         , Config::user, Config::password);
         
         $sql = "SELECT id FROM utilisateurs WHERE Email = '$eMail' and Mot de passe ='$MDP'";
-        $result = mysqli_query(mysqli_connect(Config::SERVEURNAME . ";dbname=" . Config::dbname
-        , Config::user, Config::password),$sql);
-        $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+        $result = mysqli_query("mysql:host=" .Config::SERVEURNAME . ";dbname=" . Config::dbname
+        , Config::user, Config::password,$sql);
+        $row = fetch_all($result,MYSQLI_ASSOC);
         $active = $row['active'];
         
         $cout = mysqli_num_rows($result);
