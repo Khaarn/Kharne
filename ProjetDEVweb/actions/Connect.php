@@ -1,28 +1,27 @@
-
-        <?php
-        require_once '../Config.php';
-        
-        $db = mysqli_connect( Config::SERVEURNAME . ";dbname=" . Config::dbname
-        , Config::user, Config::password);
-        
+<?php
         session_start();
-        
-        $eMail = mysqli_real_escape_string($db,$_POST,"email");
-        $MDP = mysqli_real_escape_string($db,$_POST, "mot de passe");
-        
-        $sql = "SELECT id FROM utilisateurs WHERE Email = '$eMail' and Mot de passe ='$MDP'";
-        $result = mysqli_query($db,$sql);
-        $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-        $active = $row['active'];
-        
-        $cout = mysqli_num_rows($result);
-        
-        if($cout == 1) {
-            session_register("Email");
-            $_SESSION['login_user'] = $eMail;
-            
-            header("ListeTravaille.php");
-        }else{
-            $error = "Votre e-maile ou votre mot de passe est incorrecte";
+        require_once '../Config.php';
+
+        $db = new PDO("mysql:host=" . Config::SERVEURNAME . ";dbname=" . Config::dbname
+        , Config::user, Config::password);
+
+        $mailconnect = filter_input(INPUT_POST, "email");
+        $MDP  = filter_input(INPUT_POST, "motdepasse");
+        echo $mailconnect;
+        echo $MDP;
+
+        $requser = $db->prepare("SELECT * FROM utilisateurs WHERE Email = ? AND Motdepasse = ?");
+        $requser->execute(array($mailconnect,$MDP));
+        $userexist = $requser->rowCount();
+        if ($userexist == 1){
+            $userinfo = $requser->fetch();
+            $_SESSION['id']= $userinfo['id'];
+            $_SESSION['nom'] = $userinfo['nom'];
+            $_SESSion['email'] = $userinfo['email'];
+
+            header("Location: ../ListeTravaille.php");
+        }
+        else{
+            echo "PTDR T KI";
         }
         ?>

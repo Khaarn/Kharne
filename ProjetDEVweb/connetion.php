@@ -15,7 +15,7 @@ include 'header.php';
 
 
         <div class="coo">
-            <input type="password" name="mot de passe" id="mdp" class="validate"
+            <input type="password" name="motdepasse" id="mdp" class="validate"
                                  maxlength="50" required></div><div class="coo">
             <label for="mot de passe">mot de passe</label>
             <br> <br></div>
